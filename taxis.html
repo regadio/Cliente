@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" defer src="./taxiAdmin.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 data-cy="pageHeader">Admin. Taxis</h1>
+    <div id="mainDiv" data-cy="main">
+        <ol data-cy="orderedList" id="taxisList"></ol>
+    </div> 
+    <form data-cy="taxiForm" id="taxiForm">
+        <input data-cy="input1" name="inputName" type="text" placeholder="Taxista" />
+        <input data-cy="input2" name="inputKms" type="number" placeholder="Kms" />
+        <input data-cy="input3" name="inputTravelCount" type="number" placeholder="Cantidad de viajes" />
+        <input data-cy="input4" type="submit" value="Insertar" />
+    </form>
+    <button id="sortButton" data-cy="sortTaxis">De menor ganancia a mayor</button>
+</body>
+</html>

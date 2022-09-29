@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer type="module"  src="./tasksAdmin.js"></script>
+</head>
+<body>
+    <h1 data-cy="pageHeader">Gestor de tareas</h1>
+    <div data-cy="mainTasksDiv">
+        <ol id="persolista" data-cy="orderedList"></ol>
+    </div>
+    <form data-cy="formTask" id="tasksform">
+        <input type="text" data-cy="input1" name="inputname" placeholder="Desc. Tarea">
+        <input type="number" data-cy="input2" name="inputrelevan" placeholder="Relevancia">
+        <input type="submit" data-cy="inputSubmit">
+    </form>
+    <button id="sortButton" data-cy="relevanceSortButton">Ordenar por relevancia</button>
+
+</body>
+</html>
